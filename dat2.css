@@ -5,8 +5,10 @@ Form{
     border-width: 2px;
     border-style: solid;
     border-color: blueviolet;
-
+    border-radius: 15px;
     text-align: center;
+    padding-left: 25px;
+    padding-top: 50px;
 }
 i{
     height: 50px;
