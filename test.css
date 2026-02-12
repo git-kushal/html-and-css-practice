@@ -1,0 +1,28 @@
+.object {
+    height: 500px;
+    width: 250px;
+    background-color: aquamarine;
+    margin-left: 600px;
+    margin-top: 100px;    
+    padding-left: 100px;
+    padding-top: 100px;
+}
+.red{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: red;
+}
+.yellow{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+   
+    background-color: rgb(255, 238, 0);
+}
+.green{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 13);
+}
