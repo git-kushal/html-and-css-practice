@@ -1,13 +1,17 @@
-div{
-    height: 500px;
-    width: 500px;
-    background-color: blanchedalmond;
-    border-radius: 5px;
-    border-color: rgb(0, 0, 0);
+.contentbox{
+    height: 100px;
+    width: 100px;
     border-style: solid;
-    padding-left: 50px;
-    padding-top: 50px;
-    margin-top: 250px;
-    margin-left: 600px;
-    
+    border-width: 2px;
+    border-color: black;
+    display: inline-block;
+}
+main{
+    height: 500px;
+}
+footer{
+    height: 60px;   
+    background-color: #0f1111;
+    color: antiquewhite;
+    text-align: center;
 }
