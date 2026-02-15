@@ -1,0 +1,33 @@
+html {
+    scroll-behavior: smooth; /* smooth scrolling */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: black;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
+
+section {
+    height: 100vh; /* full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+#page1 { background: lightblue; }
+#page2 { background: lightgreen; }
+#page3 { background: lightcoral; }
