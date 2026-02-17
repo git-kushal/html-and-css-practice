@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shooting Stars Navbar</title>
+
+<style>
+body {
+    margin: 0;
+    background: black;
+}
+
+/* ================= NAVBAR SKY ================= */
+
+nav {
+    position: relative;
+    height: 135px;
+    overflow: hidden;
+
+    /* Star field + sky */
+    background:
+        radial-gradient(1px 1px at 20px 30px, white, transparent),
+        radial-gradient(1px 1px at 50px 80px, white, transparent),
+        radial-gradient(1px 1px at 90px 40px, white, transparent),
+        radial-gradient(1px 1px at 130px 120px, white, transparent),
+        radial-gradient(1px 1px at 170px 60px, white, transparent),
+        radial-gradient(1px 1px at 210px 150px, white, transparent),
+        radial-gradient(1px 1px at 260px 30px, white, transparent),
+        radial-gradient(1px 1px at 310px 90px, white, transparent),
+        radial-gradient(1px 1px at 360px 50px, white, transparent),
+        radial-gradient(1px 1px at 420px 140px, white, transparent),
+        linear-gradient(to top, #000000, #130058, #000000);
+
+    background-repeat: repeat;
+    background-size: 500px 200px;
+}
+
+/* ================= SHOOTING STARS ================= */
+
+.shooting-star {
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(to left, white, transparent);
+    border-radius: 50%;
+    transform: rotate(25deg);
+    opacity: 0;
+}
+
+/* Star 1 */
+.star1 {
+    top: 20px;
+    left: -200px;
+    animation: shoot1 6s linear infinite;
+}
+
+/* Star 2 */
+.star2 {
+    top: 50px;
+    left: -300px;
+    transform: rotate(35deg);
+    animation: shoot2 8s linear infinite;
+    animation-delay: 2s;
+}
+
+/* Star 3 */
+.star3 {
+    top: 10px;
+    left: -150px;
+    transform: rotate(20deg);
+    animation: shoot3 4s linear infinite;
+    animation-delay: 4s;
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes shoot1 {
+    0% { left: -200px; top: 20px; opacity: 0; }
+    10% { opacity: 1; }
+    30% { left: 800px; top: 120px; opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes shoot2 {
+    0% { left: -300px; top: 50px; opacity: 0; }
+    15% { opacity: 1; }
+    35% { left: 900px; top: 150px; opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes shoot3 {
+    0% { left: -150px; top: 10px; opacity: 0; }
+    10% { opacity: 1; }
+    25% { left: 750px; top: 100px; opacity: 0; }
+    100% { opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <span class="shooting-star star1"></span>
+    <span class="shooting-star star2"></span>
+    <span class="shooting-star star3"></span>
+</nav>
+
+</body>
+</html>
